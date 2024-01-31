@@ -27,8 +27,8 @@
                 <!--input-->
                 <div class="my-input input-group mb-3">
                     <input v-model="newTask.text" type="text" class="form-control" placeholder="New Task" aria-label="New Task"
-                        aria-describedby="button-addon2">
-                    <button class="btn btn-outline-primary" type="button" id="button-addon2" @click="addTask()">
+                        aria-describedby="button-addon2" @keyup.enter="addTask()">
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2" @click="addTask()" >
                         Add Task
                     </button>
                 </div>
