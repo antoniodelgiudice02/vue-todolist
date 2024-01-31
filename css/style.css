@@ -26,6 +26,11 @@ hr{
     margin: 10px 0;
 }
 
+.task-text{
+    cursor: pointer;
+    
+}
+
 .done{
     text-decoration: line-through;
 }

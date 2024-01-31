@@ -43,7 +43,12 @@ createApp({
         addTask(){
             const newTaskCopy = {...this.newTask}
             this.tasks.push(newTaskCopy)
+            this.newTask.text='';
         },
+
+        /*doneInvert(boolInvert){
+            const boolInvert = this.tasks.done
+        }*/
 
     }
 

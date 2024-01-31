@@ -41,7 +41,7 @@
                     <li class="task-item" v-for="(task, index) in tasks" :class="task.done ? 'done' : '' ">
 
                         <!--nome task-->
-                        <div class="mx-2">{{task.text}}</div>
+                        <div class="task-text mx-2" @click="doneInvert(tasks.done)">{{task.text}}</div>
 
                         <!--delete task-->
                         <div class="mx-2 delete-todo" @click="deleteTask(index)"><i class="fa-solid fa-x "></i></div>
