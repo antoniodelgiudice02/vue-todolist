@@ -25,7 +25,12 @@ createApp({
                     text: 'task 5',
                     done: true,
                 }
-            ]
+            ],
+
+            newTask: {
+                text: '',
+                done: false
+            }
         }
 
     },
@@ -33,7 +38,13 @@ createApp({
     methods:{
         deleteTask(i){
             this.tasks.splice(i, 1)
-        }
+        },
+
+        addTask(){
+            const newTaskCopy = {...this.newTask}
+            this.tasks.push(newTaskCopy)
+        },
+
     }
 
 }).mount('#app')
