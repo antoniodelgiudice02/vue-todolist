@@ -1,5 +1,5 @@
 .task-item{
-    background-color: aquamarine;
+    background-color: rgb(183, 233, 244);
     list-style-type: none;
     width: 300px;
     height: 80px;
@@ -7,8 +7,15 @@
     vertical-align: middle;
     padding: 10px;
     margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .done{
     text-decoration: line-through;
+}
+
+.delete-todo{
+    cursor: pointer;
+    color: red;
 }

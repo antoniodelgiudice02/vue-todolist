@@ -28,5 +28,12 @@ createApp({
             ]
         }
 
+    },
+
+    methods:{
+        deleteTask(i){
+            this.tasks.splice(i, 1)
+        }
     }
+
 }).mount('#app')
